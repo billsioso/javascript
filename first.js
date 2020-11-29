@@ -1,2 +1,3 @@
-let name = prompt("what is your name?");
-alert(name)
+let number = 30;
+number *=2;
+document.write(number)
