@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        const hello = () =>{
-            const heading = document.querySelector('h1');
-            if (heading.innerHTML === 'Hello')
-                {
-                heading.innerHTML="good bye";
-                }else{
-                heading.innerHTML = 'Hello';    
-                }
-           
+        let counter= 0;
+        const count = () =>{
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
         }
         
         
     </script>
 </head>
 <body>
-    <button onclick="hello()">click here</button>
-    <h1>Hello</h1>
+    <button onclick="count()">count</button>
+    <h1>0</h1>
 </body>
 </html>
