@@ -6,11 +6,12 @@
     <title>Document</title>
     <script>
         const hello = () =>{
-            if (document.querySelector('h1').innerHTML === 'Hello')
+            const heading = document.querySelector('h1');
+            if (heading.innerHTML === 'Hello')
                 {
-                document.querySelector('h1').innerHTML="good bye";
+                heading.innerHTML="good bye";
                 }else{
-                    document.querySelector('h1').innerHTML = 'Hello';    
+                heading.innerHTML = 'Hello';    
                 }
            
         }
