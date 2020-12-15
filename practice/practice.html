@@ -7,15 +7,21 @@
     <script>
         let counter= 0;
         const count = () =>{
-            counter++;
-            document.querySelector('h1').innerHTML = counter;
+            counter++;   
+            document.querySelector('h1').innerHTML = counter;               
+            if (counter % 10 === 0){
+                alert(`Count is now ${counter}`);
+            }
         }
-        
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('button').onclick = count;
+        })
+       
         
     </script>
 </head>
 <body>
-    <button onclick="count()">count</button>
+    <button>count</button>
     <h1>0</h1>
 </body>
 </html>
